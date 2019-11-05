@@ -1,0 +1,255 @@
+/***** BASE STYLES *****/
+
+/**** font-family: 'Montserrat', sans-serif; ****/
+/**** Norican is a replacment for the Wisdom font ****/
+/**** which does not seem to be available on Google ****/
+/**** font-family: 'Norican', cursive; ****/
+/**** accent green color is ****/
+/**** color: #77a466; ****/
+
+/**** ultimately got this font from the "solution" zip file ****/
+@font-face{
+    font-family: 'Wisdom Script';
+    src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+    /**** background: lavender; ****/
+    /**** background: url('img/flower.jpg') ****/
+    /**** background: url('img/101-RoguePickings.png'); ****/
+}
+
+#top-section {
+    height: 468px;
+}
+
+#bottom-section {
+    height: 208px;
+}
+
+.green-accent {
+    color: #77a466;
+}
+
+.script-accent {
+    /****font-family: 'Norican', cursive;****/
+    font-family: 'Wisdom Script', cursive;
+    text-transform: lowercase;
+    color: #77a466;
+    font-size: 14px;
+}
+
+/**** document size is 1240 x 868 ****/
+/**** header is measured at 108 ****/
+/**** position of border indicates header is 110 ****/
+/**** top section is measured at about 467, use 468, not 470 ****/
+/**** bottom section is measured at about 209, use 208, not 210 ****/
+/**** footer is measured at about 81, use 80 ****/
+
+.full-width {
+    /****  width: 1200px; ****/
+    width: 1204px;
+    margin: 0 auto;
+    /**** not sure about this padding ****/
+    /**** padding: 0 20px; ****/
+    /***** added this one for debugging *****/
+    /**** border: 1px solid blue;****/
+    /**** background: pink; ****/
+}
+.half-width {
+    /**** was 600px in austin jubilee ****/
+    width: 600px;
+    /**** this margin means 0 for top & bottom
+     and auto for left and right
+     and results in centering ****/
+    /**** margin: 0 0; ****/
+    float: left;
+    /***** border: 1px solid green; *****/
+    /**** background: #87CEFA; /**** LightSkyBlue; ****/
+}
+
+.third-width {
+    /**** width should probably be 413px; ****/
+    width: 400px;
+    height: 200px;
+    /**** not sure about this margin ****/
+    /**** margin: 0 0; ****/
+    float: left;
+    /**** this doesn't work
+    clear: both;
+    ****/
+    /***** added this one for debugging *****/
+    /***** border: 1px solid blue; ****/
+    /**** background: #90EE90; /**** light green ****/
+    padding-top: 10px;
+}
+
+/**** reference ****/
+/**** 
+ padding: padding-top, padding-right, padding-bottom, and padding-left
+ ****/
+/**** margin :  margin-top margin-right margin-bottom margin-left; ****/
+
+/***** CSS for Header *****/
+
+header {
+    height: 110px;
+    /****
+    width: 1240;
+    margin: 0 auto;
+    padding: 0 20px;
+    ****/
+    /**** border: 1px solid red;****/
+}
+
+header h1 { 
+    padding: 15px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* do I need these since they are in body? */    
+    color: #000000;
+}
+
+nav {
+    float: right; 
+    padding: 30px 0px 0px 0px; ****/
+}
+nav ul li{
+    display: inline-block;
+    /**** need these here since not all parts of ul are links ****/
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #77a466;
+    font-weight: bold;
+}
+
+/* there aren't links on all of the elements of nav so don't use this?
+    yes, use it because otherwise the links are blue and underlined! */
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #77a466;
+    font-weight: bold;
+    /** _ **/
+    /* clear: both; */
+    /* haven't checked on padding yet */
+    /**** padding-left: 80px; *****/
+}
+
+/***** CSS for top section *****/
+
+/**** margin :  margin-top margin-right margin-bottom margin-left; ****/
+
+#top-section img {
+    border-top: 3px solid #77a466;
+    border-bottom: 3px solid #77a466;
+    /**** border-left: 3px solid red; ****/
+    border-left: none;
+    /***** border-right: 3px solid blue®; ****/
+    border-right: none;
+}
+
+#top-section h2 {
+    font-size: 18px;
+    color: #77a466;
+    line-height: 23px;
+    text-transform: uppercase;
+    width: 1175px;
+    padding: 3px 0px 0px 0px;
+}
+
+#top-section p {
+    font-size: 16px;
+    line-height: 25px;
+    width: 1175px;
+}
+
+/***** CSS for bottom section *****/
+
+#bottom-section h3 {
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    clear: both;
+}
+
+/****
+#bottom-section p {
+    font-size: 16px;
+    line-height: 18px;
+}  
+****/  
+
+/**** haven't been able to figure out what color 
+these borders are supposed to be ****/
+
+/**** ultimately figured out the color by looking at the solution zip file ****/
+
+#specials {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: none solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+#specials p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#reviews {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: none solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    width: 346px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+#reviews p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#contact {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: none solid red;
+    border-right: none solid blue;
+    width: 340px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 9px;
+}
+
+/***** CSS for footer *****/
+
+footer {
+    height: 80px;
+    /**** border: 1px solid red; ****/
+    clear: both;
+}
+
+
+footer h2 {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 18px;
+}
+
